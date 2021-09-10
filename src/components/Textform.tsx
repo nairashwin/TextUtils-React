@@ -72,7 +72,8 @@ const Textform = ({ heading, mode, showAlert }: TextformProps) => {
       <div className="container my-1">
         <h1>Your text summary</h1>
         <p>
-          {!text ? 0 : text.split(" ").length} words and {text.length} characters
+          {!text ? 0 : text.split(" ").filter(Boolean).length} words and{" "}
+          {text.length} characters
         </p>
         <p>{0.08 * text.length} Minutes read</p>
         <h2>Preview</h2>
