@@ -9,7 +9,7 @@ const Navbar = ({ title, aboutText, mode, toggleMode }: NavbarProps) => {
     <>
       <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="//">
+          <a className="navbar-brand" href="/">
             {title}
           </a>
           <button
