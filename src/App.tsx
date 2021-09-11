@@ -58,7 +58,6 @@ function App() {
                 showAlert={showAlert}
               />
             </Route>
-            /
           </Switch>
         </div>
       </Router>
