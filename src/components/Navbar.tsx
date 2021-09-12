@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface NavbarProps {
   title?: string;
@@ -11,9 +11,9 @@ const Navbar = ({ title, aboutText, mode, toggleMode }: NavbarProps) => {
     <>
       <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <a className="navbar-brand" href="/">
             {title}
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,24 +28,24 @@ const Navbar = ({ title, aboutText, mode, toggleMode }: NavbarProps) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <a className="nav-link" href="/about">
                   {aboutText}
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   className="nav-link disabled"
-                  to="/"
+                  href="/"
                   tabIndex={-1}
                   aria-disabled="true"
                 >
                   Disabled
-                </Link>
+                </a>
               </li>
             </ul>
             <div className="form-check form-switch">

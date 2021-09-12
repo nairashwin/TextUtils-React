@@ -3,7 +3,7 @@ import "./App.css";
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/About";
 
 export interface IAlert {
@@ -36,31 +36,31 @@ function App() {
   };
   return (
     <>
-      <Router>
-        <Navbar
-          title="Textutils"
-          aboutText="About"
-          mode={mode}
-          toggleMode={toggleMode}
-        />
-        <Alert alert={alert} />
-        <div className="container my-3">
-          <Switch>
-            {/* /users --> Component 1
+      {/* <Router> */}
+      <Navbar
+        title="Textutils"
+        aboutText="About"
+        mode={mode}
+        toggleMode={toggleMode}
+      />
+      <Alert alert={alert} />
+      <div className="container my-3">
+        {/* <Switch> */}
+        {/* /users --> Component 1
             /users/home --> Component 2 */}
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/">
-              <Textform
-                heading={"Enter text to analyze below"}
-                mode={mode}
-                showAlert={showAlert}
-              />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+        {/* <Route exact path="/about"> */}
+        {/* <About /> */}
+        {/* </Route> */}
+        {/* <Route exact path="/"> */}
+        <Textform
+          heading={"Enter text to analyze below"}
+          mode={mode}
+          showAlert={showAlert}
+        />
+        {/* </Route> */}
+        {/* </Switch> */}
+      </div>
+      {/* </Router> */}
     </>
   );
 }
