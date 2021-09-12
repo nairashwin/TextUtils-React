@@ -30,7 +30,7 @@ const About = () => {
     <div className="container" style={myStyle}>
       <h2 className="my-3">About Us</h2>
       <div className="accordion" id="accordionExample">
-        <div className="accordion-item" style={myStyle}>
+        <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
               style={myStyle}
@@ -41,7 +41,7 @@ const About = () => {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              Accordion Item #1
+              Analyze your text
             </button>
           </h2>
           <div
@@ -73,7 +73,7 @@ const About = () => {
               aria-controls="collapseTwo"
               style={myStyle}
             >
-              Accordion Item #2
+              Free to Use
             </button>
           </h2>
           <div
@@ -105,7 +105,7 @@ const About = () => {
               aria-controls="collapseThree"
               style={myStyle}
             >
-              Accordion Item #3
+              Browser Compatible
             </button>
           </h2>
           <div
