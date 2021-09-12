@@ -4,7 +4,7 @@ import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./components/About";
+// import About from "./components/About";
 
 export interface IAlert {
   msg: string;
